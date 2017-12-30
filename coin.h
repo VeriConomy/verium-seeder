@@ -7,11 +7,18 @@
 
 #include <string>
 
-static const std::string mainnet_seeds[] = {"dnsseed.bluematt.me", "bitseed.xf2.org", "dnsseed.bitcoin.dashjr.org", "seed.bitcoin.sipa.be", ""};
-static const std::string testnet_seeds[] = {"testnet-seed.alexykot.me",
-                                            "testnet-seed.bitcoin.petertodd.org",
+static const std::string mainnet_seeds[] = {"seed.bitcoin.sipa.be", // Pieter Wuille, only supports x1, x5, x9, and xd
+                                            "dnsseed.bluematt.me", // Matt Corallo, only supports x9
+                                            "dnsseed.bitcoin.dashjr.org", // Luke Dashjr
+                                            "seed.bitcoinstats.com", // Christian Decker, supports x1 - xf
+                                            "seed.bitcoin.jonasschnelli.ch", // Jonas Schnelli, only supports x1, x5, x9, and xd
+                                            "seed.btc.petertodd.org", // Peter Todd, only supports x1, x5, x9, and xd
+                                            ""};
+
+static const std::string testnet_seeds[] = {"testnet-seed.bitcoin.jonasschnelli.ch",
+                                            "seed.tbtc.petertodd.org",
+                                            "seed.testnet.bitcoin.sprovoost.nl",
                                             "testnet-seed.bluematt.me",
-                                            "testnet-seed.bitcoin.schildbach.de",
                                             ""};
 
 static const int mainnet_port = 8333;
