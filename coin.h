@@ -7,24 +7,30 @@
 
 #include <string>
 
-static const std::string mainnet_seeds[] = {"seed.bitcoin.sipa.be", // Pieter Wuille, only supports x1, x5, x9, and xd
-                                            "dnsseed.bluematt.me", // Matt Corallo, only supports x9
-                                            "dnsseed.bitcoin.dashjr.org", // Luke Dashjr
-                                            "seed.bitcoinstats.com", // Christian Decker, supports x1 - xf
-                                            "seed.bitcoin.jonasschnelli.ch", // Jonas Schnelli, only supports x1, x5, x9, and xd
-                                            "seed.btc.petertodd.org", // Peter Todd, only supports x1, x5, x9, and xd
+static const int FIRST_PROTOCOL_VERSION = 80001;
+static const int PROTOCOL_VERSION = 80002;
+static const int REQUIRE_PROTOCOL_VERSION = 80001;
+
+static const int MAINNET_MIN_HEIGHT = 180000;
+static const int TESTNET_MIN_HEIGHT = 50000;
+
+static const std::string seeder_version = "/verium-seeder:1.11/";
+
+static const std::string mainnet_seeds[] = {"206.189.59.89",
+                                            "206.189.209.81",
+                                            "206.189.145.110",
+                                            "emea.vrm.vericonomy.com",
+                                            "amer.vrm.vericonomy.com",
+                                            "apac.vrm.vericonomy.com",
+                                            "seed.vrm.mining-pool.ovh",
                                             ""};
 
-static const std::string testnet_seeds[] = {"testnet-seed.bitcoin.jonasschnelli.ch",
-                                            "seed.tbtc.petertodd.org",
-                                            "seed.testnet.bitcoin.sprovoost.nl",
-                                            "testnet-seed.bluematt.me",
-                                            ""};
+static const std::string testnet_seeds[] = {"", ""};
 
-static const int mainnet_port = 8333;
-static const int testnet_port = 18333;
+static const int mainnet_port = 32988;
+static const int testnet_port = 36988;
 
-static unsigned char pchMessageStart[4] = { 0xf9, 0xbe, 0xb4, 0xd9 };
-static unsigned char pchMessageStart_testnet[4] = { 0x0b, 0x11, 0x09, 0x07 };
+static unsigned char pchMessageStart[4] = { 0x70, 0x35, 0x22, 0x05 };
+static unsigned char pchMessageStart_testnet[4] = { 0x70, 0x35, 0x22, 0x05 };
 
 #endif // __INCLUDED_COIN_H__

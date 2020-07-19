@@ -43,7 +43,7 @@ class CMessageHeader
              READWRITE(FLATDATA(pchMessageStart));
              READWRITE(FLATDATA(pchCommand));
              READWRITE(nMessageSize);
-             if (nVersion >= 209)
+             if (nVersion >= FIRST_PROTOCOL_VERSION)
              READWRITE(nChecksum);
             )
 
