@@ -1,0 +1,5 @@
+Put seeder.conf in either /etc/seeder.conf or ~/.vrmseeder/seeder.conf
+
+Configure with your params
+
+Run python seeder.py
