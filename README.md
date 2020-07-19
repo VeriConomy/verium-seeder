@@ -1,6 +1,8 @@
 Verium-seeder
 ==============
 
+[![Build Status](https://travis-ci.com/mderasse/verium-seeder.svg?branch=master)](https://travis-ci.com/mderasse/verium-seeder)
+
 Verium-seeder is a crawler for the Verium network, which exposes a list
 of reliable nodes via a built-in DNS server, or instead
 just generates that list to push to a remote CloudFlare server.

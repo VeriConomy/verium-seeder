@@ -1,0 +1,34 @@
+version: ~> 1.0
+
+dist: xenial
+os: linux
+language: minimal
+arch: amd64
+stages:
+  - test
+install:
+  - sudo apt-get install --no-install-recommends --no-upgrade -y build-essential libboost-all-dev libssl-dev
+script:
+  - make
+  - perl -c combine.pl
+after_script:
+  - echo $TRAVIS_COMMIT_RANGE
+jobs:
+  include:
+
+    - stage: test
+      name: 'ARM'
+      arch: arm64
+
+    - stage: test
+      name: 'Win64'
+      env: >-
+        HOST=x86_64-w64-mingw32
+
+    - stage: test
+      name: '32-bit Linux'
+      env: >-
+        HOST=i686-pc-linux-gnu
+
+    - stage: test
+      name: 'x86_64 Linux'
