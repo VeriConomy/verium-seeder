@@ -19,6 +19,8 @@
 #include <boost/tuple/tuple_comparison.hpp>
 #include <boost/tuple/tuple_io.hpp>
 
+#include "coin.h"
+
 #if defined(_MSC_VER) || defined(__BORLANDC__)
 typedef __int64  int64;
 typedef unsigned __int64  uint64;
@@ -59,8 +61,6 @@ class CScript;
 class CDataStream;
 class CAutoFile;
 static const unsigned int MAX_SIZE = 0x02000000;
-
-static const int PROTOCOL_VERSION = 60000;
 
 // Used to bypass the rule against non-const reference to temporary
 // where it makes sense with wrappers such as CFlatData or CTxDB
