@@ -1,7 +1,7 @@
 Verium-Seeder
 ==============
 
-[![Build Status](https://travis-ci.com/VeriConomy/verium-seeder.svg?branch=master)](https://travis-ci.com/VeriConomy/verium-seeder)
+[![Build Status](https://travis-ci.com/VeriConomy/verium-seeder.svg?branch=1.3.0)](https://travis-ci.com/VeriConomy/verium-seeder)
 
 Verium-Seeder is a crawler for the Verium network, which exposes a list
 of reliable nodes via a built-in DNS server, or instead
