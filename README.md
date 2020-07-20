@@ -1,7 +1,7 @@
 Verium-seeder
 ==============
 
-[![Build Status](https://travis-ci.com/mderasse/verium-seeder.svg?branch=master)](https://travis-ci.com/mderasse/verium-seeder)
+[![Build Status](https://travis-ci.com/VeriConomy/verium-seeder.svg?branch=master)](https://travis-ci.com/VeriConomy/verium-seeder)
 
 Verium-seeder is a crawler for the Verium network, which exposes a list
 of reliable nodes via a built-in DNS server, or instead
@@ -17,6 +17,24 @@ Features:
   1 day and 1 week, to base decisions on.
 * very low memory (a few tens of megabytes) and cpu requirements.
 * crawlers run in parallel (by default 24 threads simultaneously).
+
+DEVELOPMENT PROCESS
+-------------------
+
+The `master` branch is regularly built and tested, but is not guaranteed to be
+completely stable. [Tags](https://github.com/VeriConomy/verium-seeder/tags) are created
+regularly to indicate new official, stable release versions of Verium.
+
+Current official Verium-Seeder release is on branch 1.3.0.
+
+The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Developer are on Slack. Join us: https://slack.vericoin.info
+
+Testing
+-------
+
+The Travis CI system makes sure that every pull request is built for Windows, Linux (x86, x64, arm)  are run automatically.
 
 
 REQUIREMENTS
