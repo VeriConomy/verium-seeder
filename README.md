@@ -25,7 +25,7 @@ The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. [Tags](https://github.com/VeriConomy/verium-seeder/tags) are created
 regularly to indicate new official, stable release versions of Verium-Seeder.
 
-Current official Verium-Seeder release is on branch 1.3.0.
+Current official Verium-Seeder release is on branch 1.3.1.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 

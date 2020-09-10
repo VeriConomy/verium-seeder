@@ -8,13 +8,13 @@
 #include <string>
 
 static const int FIRST_PROTOCOL_VERSION = 80001;
-static const int PROTOCOL_VERSION = 80002;
+static const int PROTOCOL_VERSION = 80003;
 static const int REQUIRE_PROTOCOL_VERSION = 80001;
 
 static const int MAINNET_MIN_HEIGHT = 180000;
 static const int TESTNET_MIN_HEIGHT = 50000;
 
-static const std::string seeder_version = "/verium-seeder:1.3.0/";
+static const std::string seeder_version = "/verium-seeder:1.3.1/";
 
 static const std::string mainnet_seeds[] = {"206.189.59.89",
                                             "206.189.209.81",
