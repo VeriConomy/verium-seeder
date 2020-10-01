@@ -8,13 +8,13 @@
 #include <string>
 
 static const int FIRST_PROTOCOL_VERSION = 80001;
-static const int PROTOCOL_VERSION = 80003;
+static const int PROTOCOL_VERSION = 80004;
 static const int REQUIRE_PROTOCOL_VERSION = 80001;
 
 static const int MAINNET_MIN_HEIGHT = 180000;
 static const int TESTNET_MIN_HEIGHT = 50000;
 
-static const std::string seeder_version = "/verium-seeder:1.3.1/";
+static const std::string seeder_version = "/verium-seeder:1.3.2/";
 
 static const std::string mainnet_seeds[] = {"206.189.59.89",
                                             "206.189.209.81",
@@ -22,7 +22,7 @@ static const std::string mainnet_seeds[] = {"206.189.59.89",
                                             "emea.vrm.vericonomy.com",
                                             "amer.vrm.vericonomy.com",
                                             "apac.vrm.vericonomy.com",
-                                            "seed.vrm.mining-pool.ovh",
+                                            "nsseed.vrm.vericonomy.com",
                                             ""};
 
 static const std::string testnet_seeds[] = {"", ""};
